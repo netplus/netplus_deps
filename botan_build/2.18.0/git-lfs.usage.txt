@@ -1,0 +1,9 @@
+git-lfs track pathname
+git-lfs untrack pathname
+
+git add .gitattributes
+git commit -m "update gitattributes"
+
+git add pathname
+git commit -m "add lfs files to repo"
+git push
