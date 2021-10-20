@@ -5,7 +5,7 @@
 * Build configuration for Botan 2.18.1
 *
 * Automatically generated from
-* 'configure.py --disable-shared-library --link-method=copy --os=linux --prefix=./gcc/8.3.0/armv7a/release --cpu=armhf --cc-bin=armv7-rpi2-linux-gnueabihf-g++ --ar-command=armv7-rpi2-linux-gnueabihf-ar'
+* 'configure.py --prefix=./build_target/gcc/8.3/armv7a/release --disable-shared-library --link-method=copy --cpu=armv7 --os=linux --cc-bin=armv7-rpi2-linux-gnueabihf-g++ --ar-command=armv7-rpi2-linux-gnueabihf-ar'
 *
 * Target
 *  - Compiler: armv7-rpi2-linux-gnueabihf-g++ -fstack-protector -pthread -std=c++11 -D_REENTRANT -O3
@@ -21,7 +21,7 @@
 
 #define BOTAN_VERSION_RELEASE_TYPE "unreleased"
 
-#define BOTAN_VERSION_VC_REVISION "unknown"
+#define BOTAN_VERSION_VC_REVISION "git:63d391b93fd1c45da20ab7fb2679b0f84034e8eb"
 
 #define BOTAN_DISTRIBUTION_INFO "unspecified"
 
@@ -29,13 +29,13 @@
 #define BOTAN_MP_WORD_BITS 32
 
 
-#define BOTAN_INSTALL_PREFIX R"(./gcc/8.3.0/armv7a/release)"
+#define BOTAN_INSTALL_PREFIX R"(./build_target/gcc/8.3/armv7a/release)"
 #define BOTAN_INSTALL_HEADER_DIR R"(include/botan-2)"
-#define BOTAN_INSTALL_LIB_DIR R"(./gcc/8.3.0/armv7a/release/lib)"
+#define BOTAN_INSTALL_LIB_DIR R"(./build_target/gcc/8.3/armv7a/release/lib)"
 #define BOTAN_LIB_LINK "-ldl -lrt"
 #define BOTAN_LINK_FLAGS "-fstack-protector -pthread"
 
-#define BOTAN_SYSTEM_CERT_BUNDLE "/etc/pki/tls/certs/ca-bundle.crt"
+#define BOTAN_SYSTEM_CERT_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
 
 #ifndef BOTAN_DLL
   #define BOTAN_DLL 
