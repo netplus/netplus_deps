@@ -1,0 +1,13 @@
+prefix=./gcc/10.2/x86_64/release
+exec_prefix=${prefix}
+libdir=./gcc/10.2/x86_64/release/lib
+includedir=${prefix}/include/botan-2
+
+Name: Botan
+Description: Crypto and TLS for C++11
+Version: 2.19.1
+
+Libs: -L${libdir} -lbotan-2 -fstack-protector -m64 -pthread
+Libs.private: -ldl -lrt
+Cflags: -I${includedir}
+

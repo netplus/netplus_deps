@@ -1,0 +1,13 @@
+prefix=./build_target/gcc/8.3/armv7a/release
+exec_prefix=${prefix}
+libdir=./build_target/gcc/8.3/armv7a/release/lib
+includedir=${prefix}/include/botan-2
+
+Name: Botan
+Description: Crypto and TLS for C++11
+Version: 2.19.1
+
+Libs: -L${libdir} -lbotan-2 -fstack-protector -pthread
+Libs.private: -ldl -lrt
+Cflags: -I${includedir}
+
