@@ -1,0 +1,13 @@
+1, git lfs track version/msvc/v142/x64/Debug/static/lib/botan.lib
+2, git add version/msvc/v142/x64/Debug/static/lib/botan
+3, git commit -am "comment"
+4, git push
+
+
+if the order is nor properly executed, eg: 2 before 1
+we have to revert the git first by the following cmd
+1, git reset --soft HEAD~1
+2, git lfs track ...
+3, git add 
+4, git commit 
+4, git push
