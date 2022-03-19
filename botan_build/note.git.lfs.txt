@@ -10,4 +10,4 @@ we have to revert the git first by the following cmd
 2, git lfs track ...
 3, git add 
 4, git commit 
-4, git push
+5, git push
